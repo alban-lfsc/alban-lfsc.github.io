@@ -1,0 +1,103 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Alban Boisselier</title>
+  <meta name="description" content="A simple HTML5 Template for new projects.">
+
+  <link rel="stylesheet" type="text/css" href="dist/reset.css">
+  <link rel="stylesheet" type="text/css" href="dist/font.css">
+  <link rel="stylesheet" type="text/css" href="dist/style.css">
+  
+
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <script src="dist/jquery.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="dist/moment.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script>
+  	function update() {
+		$('.clock').html(moment().format('ddd DD.MM H:mm:ss'));
+		}
+		setInterval(update, 1);
+</script>
+
+</head>
+
+<body>
+	<div class="main">
+
+
+
+		<div class="txt menu">
+			<ul>
+				<li class="btn-home"><a href="index.html" title="">Home</a></li>
+				<li class="btn-graphic"><a href="graphic.html" title="">Graphic design</a></li>
+				<li class="btn-photo"><a href="photo.html" title="">Photography</a></li>
+			</ul>
+		</div> <!-- menu -->
+
+		<div class="txt contact">
+			<ul>
+				<li><a href="https://www.instagram.com/alban_lfsc/" target="blank">Instagram</a></li>
+				<li><a href="infoscontact.html" title="">Infos & contact</a></li>
+			</ul>
+		</div> <!-- contact -->
+
+		<div class="txt date">
+			<p class="clock"></p>
+		</div> <!-- date -->
+
+
+		<div class="infos">
+
+				<div class="contact">
+			<ul>
+				<li> <a href="mailto:alban.boisselier66@gmail.com" title="">alban.boisselier66@gmail.com</a></li>
+				<li> <a href="tel:+3305426690" title=""></a>+33 6 05 42 66 90</li>
+			</ul>
+		</div>
+
+		<div class="bio">
+			<p>Lorem Ipsum is simply <em>dummy</em> text of the <strong>printing</strong> and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		</div>
+
+		<div class="cv">
+
+			<div class="experiences">
+				<p>Experiences</p>
+				<ul>
+					<li>Yard Agency (Paris) ― Art director assistant ― Internship</li>
+					<li>Shoes Up (Paris) ― Art director assistant ― Internship</li>
+					<li>Studio 808 (Toulouse)― Art director assistant ― Internship</li>
+					<li>Ob'session magazine (Nantes) ― Art director</li>
+					<li>Sans Gêne (New York) ― Graphic designer</li>
+				</ul>
+			</div> <!-- experiences -->
+
+			<div class="education">
+				
+				<p>Education</p>
+				<ul>
+					<li>Leonard de Vinci ― BTS Graphic Design print medias</li>
+					<li>Ernest Perochon ― BAC Applied Arts</li>
+				</ul>
+
+			</div> <!-- education -->
+
+		</div> <!-- cv -->
+			
+		</div> <!-- infos -->
+
+
+	</div> <!-- main -->
+
+	
+
+
+</body>
+</html>

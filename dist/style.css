@@ -1,0 +1,171 @@
+body{
+	background-color: black;
+	color: white;
+	font-family: "Arial", sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+
+	font-size: 0.75em;
+	user-select: none;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+.main{
+	user-select: none;
+}
+
+.txt{
+	margin: 10px;
+	position: fixed;
+	z-index: 99;
+}
+
+.date{
+	bottom: 0;
+	right: 0;
+}
+
+.contact{
+	bottom: 0;
+	left: 0;
+}
+
+.intro{
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.text{
+	position: absolute;
+	margin: 10px;
+	top: 0;
+	right: 0;
+	text-align: right;
+}
+
+.txt a:hover::after{
+	content: ' ☜';
+}
+
+.carousel,
+.carousel img,
+.slide,
+.auto-slide,
+.img-full,
+.img-medium,
+.img-small,
+.text,
+.next{
+	user-select: none;
+}
+
+.carousel{
+	width: 100vw;
+	height: 100vh;
+}
+
+.auto-slide,
+.slide{
+	width: 100%;
+	height: 100%;
+}
+
+.img-full{
+	width: 100%;
+	height: 100%;
+
+	
+  	background-position: center; /* Center the image */
+  	background-repeat: no-repeat; /* Do not repeat the image */
+  	background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.img-full img{
+/*	position: relative;
+
+	top: 50%;
+	transform: translateY(-50%);*/
+}
+
+.img-prout{
+	background-image: url("../img/prout.jpg"); /* The image used */
+}
+
+.img-temp{
+	background-image: url("../img/TEMP.jpg"); /* The image used */
+}
+
+.img-medium{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	height: 85%;
+}
+
+.img-small{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	height: 60%;
+}
+
+.carousel img{
+	width: auto;
+	max-height: 100%;
+	height: auto;
+	max-width: 100%;
+	
+}
+
+.img-medium img,
+.img-small img{
+
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.next{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 98;
+	top: 0;
+}
+
+
+.infos{
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 13% 20% 40% 27%;
+}
+
+.contact{
+	grid-column-start: 2;
+}
+
+.cv{
+	grid-row-start: 2;
+	grid-column-start: 3;
+}
+
+.contact, 
+.bio, 
+.experiences, 
+.education {
+
+	margin: 10px;
+}
+
+.experiences p,
+.education p{
+	margin-bottom: 8px;
+}
+

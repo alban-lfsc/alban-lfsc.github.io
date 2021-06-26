@@ -1,0 +1,90 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Photography - Alban Boisselier</title>
+  <meta name="description" content="A simple HTML5 Template for new projects.">
+
+  <link rel="stylesheet" type="text/css" href="dist/reset.css">
+  <link rel="stylesheet" type="text/css" href="dist/font.css">
+  <link rel="stylesheet" type="text/css" href="dist/style.css">
+  
+
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <script src="dist/jquery.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="dist/moment.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script>
+  	function update() {
+		$('.clock').html(moment().format('ddd DD.MM H:mm:ss'));
+		}
+		setInterval(update, 1);
+</script>
+
+</head>
+
+<body>
+	<div class="main">
+
+
+
+		<div class="txt menu">
+			<ul>
+				<li class="btn-home"><a href="index.html" title="">Home</a></li>
+				<li class="btn-graphic"><a href="graphic.html" title="">Graphic design</a></li>
+				<li class="btn-photo"><a href="photo.html" title="">Photography</a></li>
+			</ul>
+		</div> <!-- menu -->
+
+		<div class="txt contact">
+			<ul>
+				<li><a href="https://www.instagram.com/alban_lfsc/" target="blank">Instagram</a></li>
+				<li><a href="infoscontact.html" title="">Infos & contact</a></li>
+			</ul>
+		</div> <!-- contact -->
+
+		<div class="txt date">
+			<p class="clock"></p>
+		</div> <!-- date -->
+
+
+		<div class="carousel">
+
+			<div class="slide">
+				<div class="img-full img-temp"></div>
+    		<div class="text">Tempetet</div>
+  		</div>
+
+  		<div class="slide">
+  		  <div class="img-medium">
+  		  	<img src="img/3.png" alt="">
+  		  </div>
+  		  <div class="text">Rappeur</div>
+  		</div>
+
+  		<div class="slide">
+  		  <div class="img-small">
+  		  	<img src="img/7.JPG" alt="">
+  		  </div>
+  		  <div class="text">Champs</div>
+  		</div>
+
+  		<div class="next" onclick="plusSlides(1)"></div>
+
+		</div> <!-- carousel -->
+		
+	</div> <!-- main -->
+
+
+
+<script src="dist/script.js" type="text/javascript" charset="utf-8" async defer></script>
+
+
+
+</body>
+</html>
