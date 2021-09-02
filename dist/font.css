@@ -14,3 +14,10 @@
 }
 
 
+@font-face{
+ font-family: 'Arial';
+ src: url('../font/Arial-Narrow-Bold.ttf');
+ font-weight: bold;
+ font-style: narrow;
+}
+

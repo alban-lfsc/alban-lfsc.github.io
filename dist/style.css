@@ -4,8 +4,7 @@ body{
 	font-family: "Arial", sans-serif;
 	font-weight: bold;
 	text-transform: uppercase;
-
-	font-size: 0.75em;
+	font-size: 1em;
 	user-select: none;
 }
 
@@ -75,28 +74,11 @@ a{
 }
 
 .img-full{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 	width: 100%;
 	height: 100%;
-
-	
-  	background-position: center; /* Center the image */
-  	background-repeat: no-repeat; /* Do not repeat the image */
-  	background-size: cover; /* Resize the background image to cover the entire container */
-}
-
-.img-full img{
-/*	position: relative;
-
-	top: 50%;
-	transform: translateY(-50%);*/
-}
-
-.img-prout{
-	background-image: url("../img/prout.jpg"); /* The image used */
-}
-
-.img-temp{
-	background-image: url("../img/TEMP.jpg"); /* The image used */
 }
 
 .img-medium{
@@ -124,7 +106,8 @@ a{
 }
 
 .img-medium img,
-.img-small img{
+.img-small img,
+.img-full img{
 
 	position: relative;
 	left: 50%;
@@ -159,7 +142,7 @@ a{
 .contact, 
 .bio, 
 .experiences, 
-.education {
+.education{
 
 	margin: 10px;
 }
